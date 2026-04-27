@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo2.png" alt="logo aviteica">
+                </div>
+            <div class="title">
+                <h1>AVITEICA</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#visitas">Visitas</a></li>
+                <li><a href="redes">Nuestras redes</a></li>
+            </ul>
+            <img src="img/carrito sin fondo.png" alt="Carrito"  class="icono-carrito"   onclick="toggleCarrito()">
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Donde la calidad nace de la felicidad.</h1>
+            <button class="cta-button">Conoce nuestra granja</button>
+        </section>
+
+        <section id="productos">
+            <h2>Huevos Camperos de Gallinas Canarias</h2>
+            <div class="productos-grid">
+                <div class="productos-card">
+                    <img src="img\carton6.jpg" alt="cartón de 6 huevos de gallinas camperas canarias">
+                    <h3>Cartón de 6 huevos de gallinas camperas canarias</h3>
+                    <p class="precio">2,40€</p>
+                    <p class="descripcion">Huevos frescos de gallinas criadas en libertad, en formato de a 6 unidades.</p>
+                    <button onclick="añadirAlCarrito('Cartón de 6 huevos', 2.40)">Añadir al carrito</button>
+                </div>
+                  <div class="productos-card">
+                    <img src="img\carton12.jpg" alt="cartón de 6 huevos de gallinas camperas canarias">
+                    <h3>Cartón de 12 huevos de gallinas camperas canarias</h3>
+                    <p class="precio">4,80€</p>
+                    <p class="descripcion">Huevos frescos de gallinas criadas en libertad, en formato de a 12 unidades.</p>
+                    <button onclick="añadirAlCarrito('Cartón de 12 huevos', 4.80)">Añadir al carrito</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="visitas">
+            <h2>Formulario de visitas a la granja</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text"  placeholder="Teléfono" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact">
+                <div class="titlefooter">Contactos</div>
+                <li class="lista">
+                    <ul class="elem">
+                        Teléfono
+                    </ul>
+                    <ul class="elem">
+                        Correo electrónico
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
